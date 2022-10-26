@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.7.5'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 	id 'java'
+	id 'org.sonarqube' version '3.4.0.2513'
 }
 
 group = 'com.example'
@@ -11,6 +12,13 @@ sourceCompatibility = '1.8'
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
+	}
+}
+sonarqube {
+	properties {
+		property "sonar.projectKey", "maduran13_example-sonar"
+		property "sonar.organization", "maduran13"
+		property "sonar.host.url", "https://sonarcloud.io"
 	}
 }
 
