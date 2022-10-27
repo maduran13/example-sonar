@@ -20,7 +20,7 @@ sonarqube {
 		property "sonar.projectKey", "maduran13_example-sonar"
 		property "sonar.organization", "maduran13"
 		property "sonar.host.url", "https://sonarcloud.io"
-		property "sonar.coverage.exclusions", "**src/main/java/com/example/demo/controller/**"
+		property "sonar.coverage.exclusions", "**src/main/java/com/example/demo/**/**"
 	}
 }
 
